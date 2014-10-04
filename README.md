@@ -4,6 +4,8 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
+Strip all newlines from the given string. Supports linux, osx and windows line
+endings.
 
 ## Installation
 ```bash
@@ -12,12 +14,10 @@ $ npm i --save newline-remove
 
 ## Overview
 ```js
+var removeNewline = require('newline-remove');
 
-```
-
-## API
-```js
-
+removeNewline('foo\n bar\n');
+// => 'foo bar'
 ```
 
 ## License
